@@ -36,9 +36,9 @@
 //   },
 //   hobbies: ["cricket", "singing"],
 // };
-// // object destructure
-// const { name, mobile, age, address, documents, hobbies } = user;
-// const { doc1, doc2, doc3 } = documents;
+// object destructure
+// const { name, mobile,age, address } = user;
+// const { doc1, doc2, doc3 } = user.documents;
 // console.log(name);
 // console.log(user.documents.doc1);
 // console.log(doc1);
@@ -70,8 +70,37 @@
 // console.log(b);
 // var c=2;
 
-const array1 = [0, 1, 2, 3, 4, 5];
-const array2 = [6, 7, 8, 9, 10];
+// const array1 = [0, 1, 2, 3, 4, 5];
+// const array2 = [6, 7, 8, 9, 10];
 
-const array3 = [...array1, 90];
-console.log(array3);
+// const array3 = [...array1, 90];
+// console.log(array3);
+
+// const id=setInterval(() => {
+//   console.log("hi");
+// }, 2000);
+
+// setTimeout(() => {
+//     clearInterval(id);
+//   }, 1000);
+
+console.log("first console");
+
+const tempResponse = new Promise((resolve, reject) => {
+  const a = 7;
+  if (a % 2 == 0) {
+    resolve("number is even");
+  } else {
+    reject("number is not even");
+  }
+});
+
+tempResponse
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((error) => {
+    console.log(error);
+  });21
+
+console.log("second console");

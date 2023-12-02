@@ -1,5 +1,13 @@
+class 1
 Arrow Functions
 Objects
 Template Literals
 Destructuring and spread operator
 Let Const
+
+class 2
+Async/sync programming in js
+timeout,interval
+promises
+async/await
+
